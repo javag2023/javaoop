@@ -4,11 +4,21 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello");
 
-        Animal cat = new Cat();
-        Animal dog = new Dog();
+        Animal animal;
+        animal = new Lion();
+        animal.eat();
+        //animal.shout();
+        ((Lion)animal).shout();
+        animal = new Parrot();
+        animal.eat();
+        ((Parrot)animal).talk();
+
+        /*Animal parrot = new Parrot();
         System.out.println("Cat says ");
-        cat.shout();
+        animal.eat();
         System.out.println("Dog says ");
-        dog.shout();
+        parrot.eat();
+
+        Employee employee = new SeniorManager();*/
     }
 }
